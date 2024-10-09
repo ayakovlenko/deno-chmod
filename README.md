@@ -4,3 +4,11 @@
 
 A small zero-dependency library for working with Unix permission
 representations.
+
+## Development
+
+Run tests:
+
+```sh
+deno test --doc .
+```
