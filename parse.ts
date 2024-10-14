@@ -39,7 +39,7 @@ const REGEX = /^.([r-][w-][x-])([r-][w-][x-])([r-][w-][x-])$/;
  * });
  * ```
  */
-function parseSymbolic(expr: string): PermissionGroups {
+export function parseSymbolic(expr: string): PermissionGroups {
   const match = expr.match(REGEX);
   if (!match) {
     throw "incorrect permission format";
@@ -61,5 +61,3 @@ function parseSymbolic(expr: string): PermissionGroups {
 
   return { owner, group, other };
 }
-
-export { parseSymbolic };
